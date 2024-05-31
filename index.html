@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Dashboard || Home</title>
+</head>
+<body>
+    <header class="flex-evenly">
+        <h1 class="logo">N</h1>
+        <ul class="nav-links flex gap-8">
+            <li class="link-item active"><a href="#" >Movies</a></li>
+            <li class="link-item active"><a href="#" >Tv Shows</a></li>
+            <li class="link-item active"><a href="#" >Series</a></li>
+            <li class="link-item active"><a href="#" >Animation</a></li>
+        </ul>
+        <form id="search-box" class="flex-around gap-8">
+            <label for="search-field"><i class="fa-solid fa-magnifying-glass colored"></i></label>
+            <input type="search" name="query" title="search key" id="search-field">
+        </form>
+        <div class="div-nav-3 flex">
+            <div class="notification"><i class="fa-solid fa-bell"></i></div>
+            <div class="user-cover">
+                <img src="./media/Cover-2.jpg" alt="">
+            </div>
+            <div class="user-cover navBar-btn flex-center"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="s-btn hide-navbar">x</div>
+    </header>
+    <main id="main" class="countainer flex">
+        <section class="column-1">
+            <div class="column-header">
+                <div class="carousel-card">
+                    <img src="./media/img2.jpg" alt="" class="column-cover">
+                    <div class="data flex-between">
+                        <div class="dethails">
+                            <h1 class="title favorite">Dune </h1>
+                            <p class="more-data">
+                                2023,finc/Adventure, 2h 25min
+                            </p>
+                        </div>
+                        <div class="buttons flex gap-8">
+                            <button class="watch-btn active">Watch</button>
+                            <div class="plus-btn s-btn">+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="paination flex-center">
+                    <span class="pag-btn">.</span>
+                    <span class="pag-btn">.</span>
+                    <span class="pag-btn">.</span>
+                </div>
+            </div>
+            <div class="column-body">
+                <!-- Recommend -->
+                <div class="placeholder">
+                    <div class="plac-header flex-between">
+                        <h3 class="Genre-title">Recommend :</h3>
+                        <div class="toggle-btns flex gap-8">
+                            <span class="s-btn"><</span>
+                            <span class="s-btn">></span>
+                        </div>
+                    </div>
+                    <div class="placehoder-inner flex">
+                        <div class="card">
+                            <img src="./media/img1.jpg" alt="" class="card-poster">
+                            <div class="dethails flex-around">
+                                <div>
+                                    <h4 class="card-title">Avatar</h4>
+                                    <p class="card-date">2023</p>
+                                </div>
+                                |<p>7.8 <i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Latest Movies -->
+                <div class="placeholder">
+                    <div class="plac-header flex-between">
+                        <h3 class="Genre-title">Latest Movies :</h3>
+                        <div class="toggle-btns flex gap-8">
+                            <span class="s-btn"><</span>
+                            <span class="s-btn">></span>
+                        </div>
+                    </div>
+                    <div class="placehoder-inner flex">
+                        <div class="card">
+                            <img src="./media/img1.jpg" alt="" class="card-poster">
+                            <div class="dethails flex-around">
+                                <div>
+                                    <h4 class="card-title">Avatar</h4>
+                                    <p class="card-date">2023</p>
+                                </div>
+                                |<span><i class="fa-solid fa-star"></i> 7.8</span>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <img src="./media/img1.jpg" alt="" class="card-poster">
+                            <div class="dethails flex-around">
+                                <div>
+                                    <h4 class="card-title">Avatar</h4>
+                                    <p class="card-date">2023</p>
+                                </div>
+                                |<p><i class="fa-solid fa-star"></i> 7.8</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./media/img1.jpg" alt="" class="card-poster">
+                            <div class="dethails flex-around">
+                                <div>
+                                    <h4 class="card-title">Avatar</h4>
+                                    <p class="card-date">2023</p>
+                                </div>
+                                |<span><i class="fa-solid fa-star"></i> 7.8</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./media/img1.jpg" alt="" class="card-poster">
+                            <div class="dethails flex-around">
+                                <div>
+                                    <h4 class="card-title">Avatar</h4>
+                                    <p class="card-date">2023</p>
+                                </div>
+                                |<span><i class="fa-solid fa-star"></i> 7.8</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./media/img1.jpg" alt="" class="card-poster">
+                            <div class="dethails flex-around">
+                                <div>
+                                    <h4 class="card-title">Avatar</h4>
+                                    <p class="card-date">2023</p>
+                                </div>
+                                |<span><i class="fa-solid fa-star"></i> 7.8</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./media/img1.jpg" alt="" class="card-poster">
+                            <div class="dethails flex-around">
+                                <div>
+                                    <h4 class="card-title">Avatar</h4>
+                                    <p class="card-date">2023</p>
+                                </div>
+                                |<span><i class="fa-solid fa-star"></i> 7.8</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./media/img1.jpg" alt="" class="card-poster">
+                            <div class="dethails flex-around">
+                                <div>
+                                    <h4 class="card-title">Avatar</h4>
+                                    <p class="card-date">2023</p>
+                                </div>
+                                |<span><i class="fa-solid fa-star"></i> 7.8</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./media/img1.jpg" alt="" class="card-poster">
+                            <div class="dethails flex-around">
+                                <div>
+                                    <h4 class="card-title">Avatar</h4>
+                                    <p class="card-date">2023</p>
+                                </div>
+                                |<span><i class="fa-solid fa-star"></i> 7.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="column-2">
+            <div class="side-bar">
+                <div class="genres-section my-1 carousel-y">
+                    <div class="flex-between my-1">
+                        <h4>Genre</h4>
+                         <span class="active">more</span>
+                    </div>
+                    <div class="genres-inner flex">
+                        <a href="#" class="genre-item active">Animation</a>
+                        <a href="#" class="genre-item active">Adventure</a>
+                        <a href="#" class="genre-item active">War</a>
+                        <a href="#" class="genre-item active">Westren</a>
+                        <a href="#" class="genre-item active">Drama</a>
+                        <a href="#" class="genre-item active">Science Finction</a>
+                        
+                    </div>
+                </div>
+                <div class="top-rated">
+                    <h4>Top Rated :</h4>
+                    <div class="sideBar-cards-inner my-1">
+                        <div class="card flex">
+                            <img src="./media/img4.jpg" alt="" class="poster">
+                            <div class="flex-column side-card-data">
+                                <h5>Jhone Wick</h5>
+                                <p class="data-genre">2024/Action</p>
+                                <p class="rate-score"><i class="fa-solid fa-star"></i> 8.5</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card flex">
+                            <img src="./media/img4.jpg" alt="" class="poster">
+                            <div class="flex-column side-card-data">
+                                <h5>Jhone Wick</h5>
+                                <p class="data-genre">2024/Action</p>
+                                <p class="rate-score"><i class="fa-solid fa-star"></i> 8.5</p>
+                            </div>
+                        </div>
+                        <div class="card flex">
+                            <img src="./media/img4.jpg" alt="" class="poster">
+                            <div class="flex-column side-card-data">
+                                <h5>Jhone Wick</h5>
+                                <p class="data-genre">2024/Action</p>
+                                <p class="rate-score"><i class="fa-solid fa-star"></i> 8.5</p>
+                            </div>
+                        </div>
+                        <div class="card flex">
+                            <img src="./media/img4.jpg" alt="" class="poster">
+                            <div class="flex-column side-card-data">
+                                <h5>Jhone Wick</h5>
+                                <p class="data-genre">2024/Action</p>
+                                <p class="rate-score"><i class="fa-solid fa-star"></i> 8.5</p>
+                            </div>
+                        </div>
+                        <div class="card flex">
+                            <img src="./media/img4.jpg" alt="" class="poster">
+                            <div class="flex-column side-card-data">
+                                <h5>Jhone Wick</h5>
+                                <p class="data-genre">2024/Action</p>
+                                <p class="rate-score"><i class="fa-solid fa-star"></i> 8.5</p>
+                            </div>
+                        </div>
+                        <div class="card flex">
+                            <img src="./media/img4.jpg" alt="" class="poster">
+                            <div class="flex-column side-card-data">
+                                <h5>Jhone Wick</h5>
+                                <p class="data-genre">2024/Action</p>
+                                <p class="rate-score"><i class="fa-solid fa-star"></i> 8.5</p>
+                            </div>
+                        </div>
+                        <div class="card flex">
+                            <img src="./media/img4.jpg" alt="" class="poster">
+                            <div class="flex-column side-card-data">
+                                <h5>Jhone Wick</h5>
+                                <p class="data-genre">2024/Action</p>
+                                <p class="rate-score"><i class="fa-solid fa-star"></i> 8.5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ----------------------- -->
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

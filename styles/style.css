@@ -1,0 +1,421 @@
+html,*{padding: 0;margin: 0;}
+:root
+{
+    --bg-color:#000;
+    --text-color:#fff;
+    --main-color:red;
+    --fave-color:orangered;
+}
+.colred{color: var(--fave-color);}
+/* Start Global Classes */
+.carousel-x::-webkit-scrollbar{background: transparent;height: 6px;border-radius: 20px;}
+.carousel-x::-webkit-scrollbar-thumb{background: var(--fave-color);height: 6px;border-radius: 20px;}
+.carousel-y::-webkit-scrollbar{background: transparent;width: 6px;border-radius: 20px;}
+.carousel-y::-webkit-scrollbar-thumb{background: var(--fave-color);width: 6px;border-radius: 20px;}
+.fa-star{color: yellow;}
+a{text-decoration: none !important;}
+.favorite{color: var(--fave-color);}
+button{outline: 0; border: 0;cursor: pointer;}
+.active{border-radius: 20px;padding: .2rem .4rem;box-shadow:inset 0 0 12px rgba(0,0,0,.6);background: var(--fave-color);}
+.active:hover{color: var(--text-color); box-shadow:0 0 20px rgba(0,0,0,.6);transition: .5s;}
+.flex,
+.flex-column,
+.flex-evenly,
+.flex-between,
+.flex-around
+{
+    display: flex;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-between{justify-content: space-between;}
+.flex-evenly{justify-content: space-evenly;}
+.flex-around{justify-content: space-around;}
+.flex-column{flex-direction: column;}
+.gap-8{gap: .8rem;}
+.my-1{margin: 1rem 0;}
+.s-btn{height: 1.3rem;width: 1.3rem;border: solid 1px red;display: flex;align-items: center;justify-content: center;border-radius: 50%;cursor: pointer;}
+/* End Global Classes */
+body
+{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family:sans-serif;
+}
+
+/* -------------------------------------------------- Start Styling the header ------------------------------------- */
+header
+{
+    height: 50px;
+    max-width: 100%;
+}
+.logo{color: red;font-family: monospace;}
+.nav-links li
+{
+   list-style: none;
+   background: var(--fave-color);
+}
+.nav-links li a
+{
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#search-box
+{
+    background:transparent;
+    height: 35px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(221, 220, 220, 0.966);
+}
+#search-box input
+{
+    height:100%;
+    border: 0;
+    outline: 0;
+    color: orange;
+    font-style: italic;
+    background: transparent;
+    font-weight: bold;
+}
+#search-box label{translate: 30% 0;}
+
+.user-cover{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0 .4rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.user-cover img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hide-navbar{display: none;}
+
+@media (min-width:1067px)
+{
+    #search-box input
+    {
+        width: 300px;
+    }
+}
+@media (min-width:731px)
+{
+    #search-box
+    {
+        min-width: 150px;
+    }
+    .navBar-btn {display: none;}
+
+}
+@media (max-width:730px)
+{
+    .nav-links 
+    {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        z-index: 10;
+        display: none;
+    }
+    .hide-navbar
+    {
+        position: fixed;
+        top: .3rem;
+        right: .3rem;
+        z-index: 100;
+        background: orangered;
+    }
+    .notification{translate: -30% 0;}
+}
+@media (max-width:320px)
+{
+    #search-box
+    {
+        width: 150px;
+    }
+}
+/* -------------------------------------------------- End Styling the header ------------------------------------- */
+
+/* -------------------------------------------------- Start Styling the main ------------------------------------- */
+#main
+{
+    height: 90vh;
+}
+#main section
+{
+    margin: 0 .2rem;
+    height: 100%;
+}
+#main section:nth-child(1)
+{
+
+    width: 75%;
+}
+.column-header
+{
+
+    height:38%;
+    width: 98%;
+    margin:auto;
+    border-radius: 23px;
+
+}
+.carousel-card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-card img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 23px;
+}
+.data
+{
+    position: absolute;
+    bottom: 2rem;
+    left: 10%;
+    width: 80%;
+    /* background: yellowgreen; */
+}
+.data h1
+{
+    margin-bottom: 2rem;
+}
+
+.watch-btn
+{
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+/*! did'nt finish work */
+.paination
+{
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+    -webkit-translate: 0 -40%;
+    translate: 0 -40%;
+    -o-translate: 0 -40%;
+}
+/*! did'nt finish work */
+.column-body
+{
+    width: 98%;
+    margin: 0 auto;
+}
+.plac-header{margin: .5rem 0;}
+.placeholder
+{
+    margin-top:1rem;
+}
+
+
+.placehoder-inner{overflow: scroll hidden;}
+.placehoder-inner::-webkit-scrollbar{display: none;}
+.placehoder-inner .card
+{
+   position:relative;
+   height: 8rem;
+   min-width: 8rem;
+   border-radius: 12px;
+   overflow: hidden;
+   margin: 0 .1rem;
+}
+.placehoder-inner .card img.card-poster
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.placehoder-inner .card .dethails
+{
+   -webkit-backdrop-filter: blur(30px);
+   backdrop-filter: blur(30px);
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+@media (max-width:320px)
+{
+    .data h1
+    {
+        margin-bottom: .5rem;
+    }
+    .watch-btn
+    {
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+    #main section:nth-child(2){translate: 0 30px;}
+    .sideBar-cards-inner
+    {
+        min-width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+@media (max-width:375px)
+{
+    #main section:nth-child(2){translate: 0 60px;}
+}
+@media (max-width:425px)
+{
+    #main section:nth-child(2){translate: 0 70px;}
+}
+
+
+
+
+
+#main section:nth-child(2)
+{
+    width: 25%;
+}
+.genres-section
+{
+    max-height: 250px;
+    overflow: hidden scroll;
+}
+.genres-section::-webkit-scrollbar{background: transparent;}
+.genres-section::-webkit-scrollbar-thumb{background: var(--fave-color);width: 4px;border-radius: 20px;}
+.genres-inner
+{
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+.genre-item
+{
+    flex-grow: 1;
+    margin: 0 .3rem;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: bold;
+}
+@media (max-width:616px)
+{
+    #main{flex-direction: column;}
+    #main section:nth-child(1)
+    {
+    
+        width:99%;
+    }
+    #main section:nth-child(2)
+    {
+        /* */
+        width:99%;
+    }
+    .side-bar
+    {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .side-bar div
+    {
+        min-width: 50%;
+        height: 100%;
+    }
+    .sideBar-cards-inner .card
+    {
+        min-width: 100%;
+    }
+}
+
+
+.sideBar-cards-inner
+{
+   overflow: hidden scroll;
+   max-height: 43vh;
+}
+.card
+{
+    margin: .4rem 0;
+}
+.card img
+{
+    height: 4rem;
+    width: 3rem;
+    border-radius: 12px;
+    margin-right: .4rem;
+}
+.side-card-data
+{
+   justify-content: space-between;
+   height: 100%;
+}
+.card p {font-size: 13px;}
+
+@media (min-width:995px)
+{
+    .sideBar-cards-inner
+    {
+    overflow: hidden;
+    max-height: 53vh;
+    }
+    .card img
+    {
+        height: 5rem;
+        width: 4rem;
+        border-radius: 12px;
+        margin-right: .4rem;
+    }
+}
+
+@media (max-width:320px)
+{
+    #main section:nth-child(2)
+    {
+        margin-top: 1rem;
+    }
+    .side-bar
+    {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+    }
+    
+    .sideBar-cards-inner{min-width:50%;overflow: auto;}
+    .card
+    {
+        scale: .7;
+    }
+    .card img
+    {
+        margin-right: 2rem;
+    }
+}
+
+
+/* -------------------------------------------------- End Styling the main ------------------------------------- */
